@@ -1,0 +1,383 @@
+/* font-family: 'Cardo Italic', arial; */
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+    height:100%;
+}
+ a,ul{
+    list-style: none;
+    color:#fff;
+    text-decoration: none;
+}
+.container{
+    width:100%;
+    max-width:1200px;
+    margin: 0 auto;
+    padding:0 15px;
+}
+.header-block{
+    padding-top:40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #505369;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header{
+    background:url('img/Rectangle\ 2.jpg');
+    height: 740px;
+}
+.header-block__list ul{
+    display:flex;
+    font-size:13px;
+}
+.block-list__text{
+    margin-left: 60px;
+}
+
+.header-main{
+    height:600px;
+}
+.header-main__block{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:600px;
+}
+.main-block__title{
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color:#fff;
+}
+.main-block__subtitle{
+    font-size:19px;
+    text-align: center;
+    margin-bottom: 80px;
+    color:#fff;
+}
+.main-block__button{
+    padding:18px 45px;
+    font-size:13px;
+    color:#fff;
+    background-color:#e84545;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.main-block__button:hover{
+    color:#000;
+    background-color:rgb(163, 158, 158);
+}
+
+/* SECTION PAGE */
+.main-page{
+    padding-bottom: 500px;
+    padding-bottom: 125px;
+}
+.page-block__title{
+    font-size:14px;
+    margin-bottom: 25px;
+}
+.page-block{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+    line-height: 1.5;
+    width:33,33333%;
+
+}
+.page-block__icon{
+    max-width: 60px;
+    max-height: 60px;
+    margin-bottom:30px;
+}
+.page-block__subtitle{
+    color:#909499;
+}
+.main-page__block{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top:120px;
+    
+}
+
+/* SECTION PHOTO */
+.photo{
+    position:relative;
+}
+.photo-block{
+    width:25%;
+    overflow: hidden;
+    padding:0 1px;
+    margin-bottom: -3px;
+    position:relative;
+}
+.photo-block:hover .photo-content{
+    opacity:1;
+}
+.photo-blocks{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.photo-content{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height:350px;
+    overflow: hidden;
+    text-align: center;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    font-size:14px;
+    color:#fff;
+    background-color:rgba(232, 69,69, 0.9);
+
+    transition:opacity 0.5s linear;
+    opacity:0;
+
+    
+}
+.photo-title{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+
+/* FOOTER */
+.footer-text{
+    text-align: center;
+    line-height: 35px;
+    padding:15px 0;
+    color:#808080;
+    font-size: 14px;
+}
+.footer-text span{
+    color:#fff;
+}
+.footer{
+    background-color: #313454;
+}
+.footer-main{
+    background-color: #3a3e64;
+    height: 245px;
+}
+.footer-main__content{
+    padding-top: 70px;
+    display:flex;
+    justify-content: space-between;
+}
+.footer-block{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width:330px;
+}
+.footer-social{
+    justify-content: center;
+    
+}
+.footer-svg{
+    fill:#3a3e64;
+}
+.footer-social .social__item{
+    background: none;
+    border:3px solid #fff;
+    border-radius: 2px;
+}
+.footer-social .social-svg{
+    fill:#fff;
+}
+.footer-title{
+    font-size: 14px;
+    color:#fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.footer-subtitle{
+    max-width:330px;
+    color:#7a7c91;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.icon{
+    border:2px solid #fff;
+    height:40px;
+    max-width:40px;
+    padding:10px;
+    transition: 0.5s;
+ 
+    
+}
+.icon img{
+    height:20px;
+}
+.facebook{
+    padding:10px;
+    width:40px;
+}
+.icon:hover{
+    background-color:#767679;
+}
+.icon img:hover{
+    color:red;
+}
+
+
+/* DOWNLOAD */
+.download{
+    margin:100px 0;
+}
+.download-text{
+    text-align: center;
+}
+.download-text span{
+    font-size:28px;
+}
+.download-text p{
+    font-size:13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+.download-btn{
+    padding:15px 85px;
+    color:#fff;
+    background-color: #e84545;
+    border:none;
+    transition:0.3s;
+    cursor:pointer;
+}
+.download-btn:hover{
+    color:#000;
+    background-color:rgb(163, 158, 158);
+}
+
+
+/* SECTION CLIENT */
+.client{
+    background-color: #53354a;
+    height:500px;
+}
+.client-content{
+    display:flex;
+    flex-wrap: wrap;
+}
+.client-block1{
+    width:50%;
+    
+    position:relative;
+}
+.client-image{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 1;
+    height:500px;
+}
+.client-block2{
+    width:50%;
+}
+.block2-title span{
+    font-size:36px;
+    font-family: 'Cardo Italic', arial;
+    color:#fff;
+    margin-bottom: 27px;
+}
+.block2-title p{
+    font-size:13px;
+    text-transform: uppercase;
+    color:#fff;
+    margin-top: 27px;
+    font-weight: 700;
+}
+.block2-title{
+    padding-top:115px;
+    padding-left:85px;
+}
+
+
+/*SECTION PEOPLE */
+
+.people{
+    margin:100px 0;
+   
+}
+.people-block{
+    width:25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+    
+}
+.people-blocks{
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+}
+.people-title{
+    font-size: 22px;
+    color:#000;
+}
+.people-photo{
+    margin-bottom: 30px;
+    display:block;
+    max-width: 100%;
+    height:auto;
+}
+.people-subtitle{
+    font-size:13px;
+    color:#e84545;
+}
+.people-object{
+    font-size:13px;
+    color:#6c7279;
+    line-height: 24px;
+    margin-bottom: 20px;
+    max-width: 270px;
+}
+.people-social{
+    display:flex;
+}
+.social__item{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:40px;
+    height:40px;
+    border:1px solid #e8ecee;
+    margin-right: 4px;
+    background-color:#fff;
+    transition: background 0.2s linear;
+}
+.social__item:hover{
+    background-color:#c6cacc;
+}
+.social__item:hover .social-svg{
+    fill:#000;
+}
+.social-svg{
+    fill:#c6cacc;
+    display:block;
+    height:18px;
+
+    transition: fill 0.2s linear;
+}
