@@ -1,4 +1,4 @@
-/* font-family: 'Cardo Italic', arial; */
+/* font-family: 'Cardo', serif; */
 
 
 *{
@@ -22,6 +22,7 @@ body{
     padding:0 15px;
 }
 .header-block{
+    z-index:1000;
     padding-top:40px;
     padding-bottom: 40px;
     border-bottom: 1px solid #505369;
@@ -29,9 +30,20 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+.header-top.fixed{
+    position:fixed;
+    background-color: #313454;
+    width:100%;
+    z-index:1000;
+}
+.header-top.fixed .header-block{
+    padding-top:10px;
+    padding-bottom: 10px;
+    height:auto;
+}
 .header{
     background:url('../img/Rectangle\ 2.jpg');
-    height: 740px;
+    height: auto;
 }
 .header-block__list ul{
     display:flex;
@@ -44,7 +56,12 @@ body{
 .block-list__text{
     margin-left: 60px;
 }
-
+.block-list li{
+    transition:.2s;
+}
+.block-list li:hover{
+    font-weight: 700;
+}
 .header-main{
     height:600px;
 }
@@ -193,7 +210,7 @@ body{
     display:flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-start;
     width:330px;
 }
 .footer-social{
@@ -306,7 +323,7 @@ body{
 }
 .block2-title span{
     font-size:36px;
-    font-family: 'Cardo Italic', arial;
+    font-family: 'Cardo', serif;
     color:#fff;
     margin-bottom: 27px;
 }
@@ -330,9 +347,10 @@ body{
    
 }
 .people-block{
-    width:25%;
+    width:auto;
     padding: 0 15px;
     margin-bottom: 30px;
+    width:25%;
     
 }
 .people-blocks{
@@ -349,6 +367,9 @@ body{
     display:block;
     max-width: 100%;
     height:auto;
+}
+.people-photo img{
+    margin:0;
 }
 .people-subtitle{
     font-size:13px;
@@ -427,6 +448,19 @@ body{
 /* MEDIA 
 =================*/
 
+@media (max-width:1134px){
+    .people-block{
+       width: 50%;
+    }
+    .people-blocks{
+        justify-content: center;
+
+    }
+    *:hover{
+        display:none;
+    }
+}
+
 @media (max-width: 991px) {
 
     .block-list__text{
@@ -441,7 +475,13 @@ body{
     .main-block__button{
         margin-bottom: 55px;
     }
+    .block2-title span{
+        font-size: 30px;
+    }
 }
+
+
+    
 
 @media (max-width:767px){
      .header-main{
@@ -455,11 +495,50 @@ body{
         font-size:15px;
         line-height: 35px;
     }
+  
+    .people-blocks{
+        justify-content: center;
+    }
+    .page-block{
+      width:100%;
+      margin-right: 0;
+      text-align:center;
+    }
+   
+    
     
 }
 
-@media (max-width:697px){
-    .page-block{
-        margin:0 auto 70px auto;
+@media (max-width:650px){
+    .client{
+        display:none;
+    }
+}
+
+@media (max-width:535px){
+    .footer-subtitle{
+        font-size:11px;
+    }
+}
+
+@media (max-width:470px){
+    .footer-main__content{
+        flex-direction: column;
+        align-items:center;
+        padding:30px 0;
+    }
+    .footer-main{
+        height:auto;
+       
+    }
+    .footer-block{
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width:350px){
+    .main-block__title{
+        font-size:30px;
     }
 }
