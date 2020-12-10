@@ -84,6 +84,7 @@ body{
     text-align: center;
     margin-bottom: 80px;
     color:#fff;
+    padding: 15px 0;
 }
 .main-block__button{
     padding:18px 45px;
@@ -478,6 +479,9 @@ body{
     .block2-title span{
         font-size: 30px;
     }
+    .photo-block{
+        width:50%;
+    }
 }
 
 
@@ -512,6 +516,9 @@ body{
 @media (max-width:650px){
     .client{
         display:none;
+    }
+    .photo-block{
+        width:100%;
     }
 }
 
