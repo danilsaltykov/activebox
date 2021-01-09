@@ -80,8 +80,9 @@ body{
     color:#fff;
 }
 
-.main-block__title a{
+.main-block__title span{
     color:rgb(223, 8, 8);
+    text-decoration: underline;
 }
 .main-block__subtitle{
     font-size:19px;
