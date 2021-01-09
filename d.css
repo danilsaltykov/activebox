@@ -79,6 +79,10 @@ body{
     margin-bottom: 40px;
     color:#fff;
 }
+
+.main-block__title a{
+    color:rgb(223, 8, 8);
+}
 .main-block__subtitle{
     font-size:19px;
     text-align: center;
